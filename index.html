@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WizardZ: digital landscape for success with digital marketing service like SEO, PPC, and social media marketing.">
+  <meta name="author" content="Bobby Tiwari/Asius">
+  <title>WizardZ: Marketing Landscape</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- google fonts basic -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      font-family: "Rajdhani", serif;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      word-spacing: 5px;
+    }
+
+    .word-spacing {
+      word-spacing: 8px;
+    }
+  </style>
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#1f1f1f] w-screen h-screen overflow-hidden overflow-y-scroll px-8 lg:px-24 pt-4 relative">
+  <!-- Navbar Starts Here -->
+  <nav class="w-full flex justify-between items-center text-white">
+    <!-- Logo -->
+    <div id="logo" class="flex items-center">
+      <i class="ri-gemini-fill text-3xl mr-2 rotate-45 inline-block"></i>
+      <a href="#" class="text-3xl font-bold">WizardZ</a>
+    </div>
+
+    <!-- Menu List -->
+    <ul id="nav-bar-menu"
+      class="fixed font-medium flex flex-col gap-5 py-12 px-6 top-0 right-[-40%] h-screen w-[30%] bg-[#b9ff66] lg:p-0 lg:w-auto lg:h-auto lg:bg-transparent lg:justify-between lg:relative lg:left-0 lg:items-center lg:gap-10 text-xl lg:flex-row lg:text-white">
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Use Case</li>
+      <li>Pricing</li>
+      <li>Blog</li>
+      <li>
+        <button
+          class="border-black px-4 py-2 lg:px-8 lg:py-4 border-2 lg:border-[#f2f2f2] bg-transparent rounded-lg hover:bg-[#f2f2f2] hover:text-black">Request
+          & quote</button>
+      </li>
+    </ul>
+    <!-- Menu Icon -->
+    <button id="menu-toggle-btn" class="close block text-2xl cursor-pointer z-10 lg:hidden">
+      <i class="ri-menu-3-line"></i>
+    </button>
+  </nav>
+  <!-- Navbar Ends Here -->
+
+  <!-- Header Start Here -->
+  <header class="w-full lg:h-4/5 lg:grid lg:grid-cols-[40%_1fr] relative">
+    <!-- Headers Heading Text -->
+    <section id="headers-heading-text" class="w-full flex flex-col pt-16 text-white h-full">
+      <h2 class="text-4xl font-bold lg:text-7xl">Navigating the digital landscape for success</h2>
+      <picture id="headers-image" class="lg:hidden">
+        <img src="/assets/wizardz-hero.svg" alt="hero image"
+          class="w-auto bg-center object-cover bg-no-repeat lg:hidden">
+      </picture>
+      <p class="text-lg font-medium mt-4">Our digital marketing agency helps businesses grow and succeed online through
+        a range of servies inclunding SEO, PFC, social media marketing and content creation.</p>
+      <button
+        class="word-spacing bg-[#f2f2f2] rounded-lg w-[100%] lg:w-[60%] py-4 text-lg font-semibold mt-10 text-black hover:bg-[rgba(242,242,242,0.7)]">Book
+        a
+        consultation</button>
+    </Section>
+    <!-- Headers Heading Text Ends -->
+
+    <section id="headers-image"
+      class="h-full bg-[url('/assets/Wizardz-hero.svg')] bg-center object-cover bg-no-repeat hidden lg:block"></section>
+  </header>
+  <!-- Header Ends Here -->
+
+  <!-- Brands Section Starts Here -->
+  <section id="brand-section"
+    class="w-full flex flex-wrap justify-center gap-10 lg:justify-between items-center mt-15 lg:gap-0">
+    <img class="w-36" src="/assets/logos/amazon-logo.svg" alt="amazone logo">
+    <img class="w-36" src="/assets/logos/dribble-logo.svg" alt="dribble logo">
+    <img class="w-36 fill-white" src="/assets/logos/noion-logo.svg" alt="notion logo">
+    <img class="w-36" src="/assets/logos/netflix.svg" alt="netflix logo">
+    <img class="w-36" src="/assets//logos/zoom-logo.svg" alt="zoom logo">
+  </section>
+  <!-- Brands Section Ends Here -->
+
+  <!-- Services Section Starts Here -->
+  <section class="mt-20" id="services-section">
+    <!-- Service Section Heading -->
+    <div id="service-section-heading" class="flex-col lg:flex-row flex justify-start items-center w-full gap-8">
+      <h2 class="px-2 text-black text-4xl font-bold bg-[#b9ff66] rounded-lg">Services</h2>
+      <p class="w-[80%] text-center lg:text-left lg:w-[60%] text-white font-normal text-base">Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit.
+        Placeat, dolores! Maiores quia veniam in esse, nam dignissimos molestiae numquam accusantium!</p>
+    </div>
+
+    <!-- Cards Containers -->
+    <section class="flex flex-wrap  lg:grid lg:grid-cols-2 gap-10 mt-12 pb-12">
+      <!-- Card One -->
+      <div id="card1"
+        class="h-72 rounded-[40px] border-2 border-[#f2f2f2] shadow-[0_20px_0_rgba(242,242,242,1)] p-6 bg-transparent grid grid-cols-2">
+        <div class="flex flex-col justify-between py-4">
+          <h2 class="text-4xl font-semibold text-black bg-[#b9ff66] p-1 rounded-md">Search Engine Optimization</h2>
+          <a class="flex justify-start items-center gap-2 text-lg text-white font-medium">
+            <i
+              class="ri-arrow-right-up-line flex justify-center items-center p-2 bg-white text-[#b9ff66] w-12 h-12 rounded-full text-2xl "></i>
+            Learn More
+          </a>
+        </div>
+        <!-- Image Part -->
+        <div class="h-full flex justify-center items-center">
+          <img src="https://maxbuzz.agency/services/01.svg" alt="">
+        </div>
+      </div>
+      <!-- Card Two -->
+      <div id="card2"
+        class="h-72 rounded-[40px] border-2 border-[#f2f2f2] shadow-[0_20px_0_rgba(242,242,242,1)] p-6 grid grid-cols-2 bg-[#f2f2f2]">
+        <div class="flex flex-col justify-between py-4">
+          <h2 class="text-4xl font-semibold text-black bg-white p-1 rounded-md">Pay per click advertising</h2>
+          <a class="flex justify-start items-center gap-2 text-lg text-white font-medium">
+            <i
+              class="ri-arrow-right-up-line flex justify-center items-center p-2 bg-white text-black w-12 h-12 rounded-full text-2xl "></i>
+            Learn More
+          </a>
+        </div>
+        <!-- Image Part -->
+        <div class="h-full flex justify-center items-center">
+          <img src="https://maxbuzz.agency/services/02.svg" alt="">
+        </div>
+      </div>
+      <!-- Card Three -->
+      <div id="card3"
+        class="h-72 rounded-[40px] border-2 border-[#f2f2f2] shadow-[0_20px_0_rgba(242,242,242,1)] p-6 grid grid-cols-2 bg-[#f2f2f2]">
+        <div class="flex flex-col justify-between py-4">
+          <h2 class="text-4xl font-semibold text-black bg-white p-1 rounded-md">E-mail marketing</h2>
+          <a class="flex justify-start items-center gap-2 text-lg text-white font-medium">
+            <i
+              class="ri-arrow-right-up-line flex justify-center items-center p-2 bg-white text-black w-12 h-12 rounded-full text-2xl "></i>
+            Learn More
+          </a>
+        </div>
+        <!-- Image Part -->
+        <div class="h-full flex justify-center items-center">
+          <img src="https://maxbuzz.agency/services/04.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Card Four -->
+      <div id="card4"
+        class="h-72 rounded-[40px] border-2 border-[#f2f2f2] shadow-[0_20px_0_rgba(242,242,242,1)] p-6 bg-transparent grid grid-cols-2">
+        <div class="flex flex-col justify-between py-4">
+          <h2 class="text-4xl font-semibold text-black bg-[#b9ff66] p-1 rounded-md">Social media marketing</h2>
+          <a class="flex justify-start items-center gap-2 text-lg text-white font-medium">
+            <i
+              class="ri-arrow-right-up-line flex justify-center items-center p-2 bg-white text-[#b9ff66] w-12 h-12 rounded-full text-2xl "></i>
+            Learn More
+          </a>
+        </div>
+        <!-- Image Part -->
+        <div class="h-full flex justify-center items-center">
+          <img src="https://maxbuzz.agency/services/03.svg" alt="">
+        </div>
+      </div>
+
+    </section>
+    <!-- Cards Containers Ends -->
+  </section>
+  <!-- Services Section Ends Here -->
+
+  <!-- Contact Section or Proposal Section -->
+  <section id="contact-section" class="w-full my-24">
+    <div class="contacts w-full py-5 px-12 flex justify-between items-center bg-[#f2f2f2] rounded-[40px]">
+      <div class="flex flex-col w-full lg:w-1/2">
+        <h2 class="font-bold text-4xl">Let's make things happen</h2>
+        <p class="my-5 font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam cum
+          nemo esse. Qui, eius!</p>
+        <button
+          class="bg-[#1f1f1f] rounded-lg py-4 px-4 w-full lg:w-[60%] text-white text-2xl font-medium hover:bg-[rgba(31,31,31,0.7)] hover:text-white">
+          Get your free proposal
+        </button>
+      </div>
+      <!-- Image Section -->
+      <div class="w-1/2 flex justify-end hidden lg:block">
+        <img src="/assets/contact-page.webp" alt="contact" class="w-[60%] h-[50%] object-cover">
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section or Proposal Section Ends Here-->
+
+  <!-- Case Study Section Starts Here -->
+  <section id="case-study-section" class="w-full">
+    <div id="case-study-heading" class="flex-col lg:flex-row flex justify-start items-center w-full gap-8">
+      <h2 class="px-2 text-black text-4xl font-bold bg-[#b9ff66]  rounded-lg">Case Study</h2>
+      <p class="w-[80%] text-center lg:text-left lg:w-[60%] text-white font-normal text-base ">Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit.
+        Placeat, dolores! Maiores quia veniam in esse, nam dignissimos molestiae numquam accusantium!</p>
+    </div>
+    <!-- Cards Sections for Case Study Starts Here -->
+    <div class="flex flex-wrap flex-col lg:grid lg:grid-cols-3 py-12 px-10 bg-[#f2f2f2] rounded-[40px] my-20">
+      <!-- Card 1 -->
+      <div id="case-study-card1"
+        class="text-black font-medium text-xl border-b-2 lg:border-b-0  lg:border-r-2 border-black flex flex-col gap-4">
+        <p class="w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reiciendis facilis minima
+          animi nisi fugit
+          repellat dicta quis non odit.</p>
+        <a href="#" class="text-lg font-medium flex justify-start items-center text-[#b9ff66]">
+          <span>Learn more</span>
+          <i class="ri-arrow-right-up-line flex justify-center items-center p-2 w-12 h-12 rounded-full text-2xl "></i>
+        </a>
+      </div>
+      <!-- Card 2 -->
+      <div id="case-study-card2"
+        class="text-black font-medium text-xl border-b-2 lg:border-b-0 lg:border-r-2 border-black flex flex-col gap-4 pt-10 lg:pl-10 lg:pt-0">
+        <p class="w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reiciendis facilis minima
+          animi nisi fugit
+          repellat dicta quis non odit.</p>
+        <a href="#" class="text-lg font-medium flex justify-start items-center text-[#b9ff66]">
+          <span>Learn more</span>
+          <i class="ri-arrow-right-up-line flex justify-center items-center p-2 w-12 h-12 rounded-full text-2xl "></i>
+        </a>
+      </div>
+      <!-- Card 3 -->
+      <div id="case-study-card3" class="text-black font-medium text-xl flex flex-col gap-4 pt-10 lg:pl-10 lg:pt-0">
+        <p class="w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reiciendis facilis minima
+          animi nisi fugit
+          repellat dicta quis non odit.</p>
+        <a href="#" class="text-lg font-medium flex justify-start items-center text-[#b9ff66]">
+          <span>Learn more</span>
+          <i class="ri-arrow-right-up-line flex justify-center items-center p-2 w-12 h-12 rounded-full text-2xl "></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Case Study Section Ends Here -->
+
+  <!-- Footer Starts Here -->
+  <footer class="bg-slate-950 w-full rounded-t-[40px] py-15 px-5 text-white mt-15">
+    <section id="footer-header-section" class="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center">
+      <div id="logo" class="flex items-center">
+        <i class="ri-gemini-fill text-3xl mr-2 rotate-45 inline-block"></i>
+        <a href="#" class="text-3xl font-bold">WizardZ</a>
+      </div>
+
+      <ul class="flex flex-col lg:flex-row justify-center items-center font-semibold underline gap-4">
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Use Case</li>
+        <li>Pricing</li>
+        <li>Blog</li>
+      </ul>
+
+      <!-- Social Links -->
+      <ul class="flex gap-2 text-3xl mt-2 lg:mt-0">
+        <li>
+          <a href=""><i class="ri-facebook-circle-fill"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="ri-instagram-fill"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="ri-linkedin-box-fill"></i></a>
+        </li>
+      </ul>
+    </section>
+
+    <div id="contact-links-form" class="flex flex-col lg:grid lg:grid-cols-[30%_1fr] px-4 py-10">
+      <div id="contact-details"
+        class="flex flex-col justify-center items-center lg:justify-start lg:items-start text-lg font-normal gap-5">
+        <h3 class="text-2xl font-bold">Contact us:</h3>
+        <div class="w-[60%] flex flex-col gap-4 justify-center items-center lg:justify-start lg:items-start">
+          <span>Email: examplemail.com</span>
+          <span>Phone: +123 456 789</span>
+          <span>Address: 1234 Street Name, City Name, Country Name</span>
+        </div>
+      </div>
+
+      <div id="form" class="bg-[#292a32] rounded-xl mt-4 lg:mt-0">
+        <form action="#" class="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4 p-6 text-xl font-medium">
+          <input type="text" placeholder="Email" class="px-4 py-6 border-2 border-white rounded-lg w-full md:w-[60%]">
+          <button class="bg-[#b9ff66] px-4 py-6 text-black rounded-lg w-full md:flex-1 hover:bg-white hover:scale-[1.02]">Talk
+            with Us</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="footer-end" class="border-t-2 border-white py-5 flex flex-col lg:flex-row justify-between items-center text-lg font-semibold">
+      <span>WizardZ@2024 - Made with Passion</span>
+      <span>All creadits to Bobby Tiwari</span>
+    </section>
+
+  </footer>
+
+  <!-- Green Sock Libearay -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- my js -->
+  <script src="/src/index.js"></script>
+</body>
+
+</html>
