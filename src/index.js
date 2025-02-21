@@ -1,3 +1,7 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 function pageOneAnimation() {
   const tl = gsap.timeline();
 
@@ -157,10 +161,10 @@ function caseStudyAnimation() {
     });
 }
 
-// pageOneAnimation();
-// ServicePageAnimation();
-// contactPageAnimation();
-// caseStudyAnimation();
+pageOneAnimation();
+ServicePageAnimation();
+contactPageAnimation();
+caseStudyAnimation();
 
 // Menu Toggle
 function toggleMenu() {
