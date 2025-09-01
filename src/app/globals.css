@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Theme root variables */
+:root {
+  /* Backgrounds */
+  --background: #f2f2f2;
+  --surface: #1f1f1f;
+  --footer-bg: #020617;
+
+  /* Foreground (text) */
+  --text-primary: #000;
+  --text-secondary: #fff;
+
+  /* Accent colors */
+  --primary: #b9ff66;
+
+  /* Footer specific */
+  --footer-border: #fff;
+
+  /* Effects */
+  --card-shadow: 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Dark theme overrides - only define what changes */
+[data-theme='dark'] {
+  --background: #1f1f1f;
+  --surface: #f2f2f2;
+
+  /* Foreground (text) */
+  --text-primary: #fff;
+  --text-secondary: #000;
+}
+
+/* Theme configuration for Tailwind */
+@theme inline {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-border: var(--footer-border);
+  --color-footer-link: var(--footer-link);
+  --color-footer-link-hover: var(--footer-link-hover);
+  --color-card-shadow: var(--card-shadow);
+}
+
+/* Add cursor pointer to all button elements */
+button {
+  cursor: pointer;
+}
+
+/* Custom selection color: text-primary bg, text black */
+::selection {
+  background: var(--primary);
+  color: #000;
+}

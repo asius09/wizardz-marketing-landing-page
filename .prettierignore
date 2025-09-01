@@ -1,0 +1,5 @@
+# Ignore build artifacts and Next.js output for landing page
+.next
+out
+build
+coverage
