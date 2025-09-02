@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-
+import { brands } from '@/data';
 // Parent container animation for staggered children
 const containerVariants: Variants = {
   hidden: {},
@@ -28,28 +28,6 @@ const brandVariants: Variants = {
 };
 
 export const Brands = () => {
-  const brands = [
-    {
-      src: '/assets/logos/amazon-logo-white.svg',
-      alt: 'amazon logo',
-    },
-    {
-      src: '/assets/logos/dribble-logo-white.svg',
-      alt: 'dribble logo',
-    },
-    {
-      src: '/assets/logos/notion-logo-white.svg',
-      alt: 'notion logo',
-    },
-    {
-      src: '/assets/logos/netflix.svg',
-      alt: 'netflix logo',
-    },
-    {
-      src: '/assets/logos/zoom-logo.svg',
-      alt: 'zoom logo',
-    },
-  ];
   return (
     <motion.section
       id="brand-section"

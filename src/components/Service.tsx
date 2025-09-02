@@ -4,49 +4,7 @@ import { cn } from '@/lib/utils';
 import { IconArrowNarrowUp } from '@tabler/icons-react';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
-
-const serviceCards = [
-  {
-    id: 'card1',
-    title: 'Search Engine Optimization',
-    img: 'https://maxbuzz.agency/services/01.svg',
-    bg: 'bg-transparent',
-    titleBg: 'bg-[#b9ff66]',
-    iconColor: 'text-[#b9ff66]',
-    iconBg: 'bg-white',
-    iconText: 'text-[#b9ff66]',
-  },
-  {
-    id: 'card2',
-    title: 'Pay per click advertising',
-    img: 'https://maxbuzz.agency/services/02.svg',
-    bg: 'bg-surface',
-    titleBg: 'bg-white',
-    iconColor: 'text-black',
-    iconBg: 'bg-white',
-    iconText: 'text-black',
-  },
-  {
-    id: 'card3',
-    title: 'E-mail marketing',
-    img: 'https://maxbuzz.agency/services/04.svg',
-    bg: 'bg-surface',
-    titleBg: 'bg-white',
-    iconColor: 'text-black',
-    iconBg: 'bg-white',
-    iconText: 'text-black',
-  },
-  {
-    id: 'card4',
-    title: 'Social media marketing',
-    img: 'https://maxbuzz.agency/services/03.svg',
-    bg: 'bg-transparent',
-    titleBg: 'bg-[#b9ff66]',
-    iconColor: 'text-[#b9ff66]',
-    iconBg: 'bg-white',
-    iconText: 'text-[#b9ff66]',
-  },
-];
+import { serviceCards } from '@/data';
 
 // Animation variants for the cards
 const cardVariants: Variants = {

@@ -5,14 +5,13 @@ import { IconMenu4, IconMinus, IconSparkles } from '@tabler/icons-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import { sectionLinks } from '@/data';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = ['About Us', 'Services', 'Use Case', 'Pricing', 'Blog'];
-
   return (
-    <nav className="relative z-20 flex w-full items-center justify-between pt-4 text-white">
+    <nav className="relative z-20 flex w-full items-center justify-between pt-4">
       <motion.div
         id="logo"
         initial={{ opacity: 0, y: -20 }}
@@ -23,7 +22,7 @@ export const Header = () => {
           href="/"
           id="footer-logo"
           aria-label="Go to WizardZ homepage"
-          className="flex items-center gap-2 text-2xl font-bold"
+          className="text-text-primary flex items-center gap-2 text-2xl font-bold"
         >
           <motion.span
             initial={{ rotate: -30, scale: 0.7 }}
@@ -58,21 +57,24 @@ export const Header = () => {
           'hidden text-xl font-medium lg:relative lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:bg-transparent lg:p-0 lg:text-white'
         )}
       >
-        {navLinks.map((label, idx) => (
+        {sectionLinks.map(({ label, href }, idx) => (
           <motion.li
             key={label}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + idx * 0.07, duration: 0.3 }}
-            className="hover:text-primary cursor-pointer underline-offset-6 hover:underline"
+            className="hover:text-primary text-text-primary cursor-pointer underline-offset-6 hover:underline"
           >
-            {label}
+            <Link href={href}>{label}</Link>
           </motion.li>
         ))}
         <motion.li
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 + navLinks.length * 0.07, duration: 0.3 }}
+          transition={{
+            delay: 0.2 + sectionLinks.length * 0.07,
+            duration: 0.3,
+          }}
         >
           <button
             type="button"
@@ -83,7 +85,7 @@ export const Header = () => {
               'text-text-primary',
               'rounded-lg font-semibold shadow-md',
               'transition-all duration-200',
-              'hover:bg-surface hover:text-black',
+              'hover:bg-surface hover:text-text-secondary',
               'focus:ring-primary focus:ring-2 focus:ring-offset-2 focus:outline-none'
             )}
           >
@@ -136,7 +138,7 @@ export const Header = () => {
             >
               <ul className="flex flex-col gap-7">
                 <AnimatePresence mode="wait">
-                  {navLinks.map((label, idx) => (
+                  {sectionLinks.map(({ href, label }, idx) => (
                     <motion.li
                       key={label}
                       initial={{ opacity: 0, x: 48 }}
@@ -148,7 +150,7 @@ export const Header = () => {
                         duration: 0.32,
                         delay: menuOpen
                           ? 0.18 + idx * 0.09
-                          : 0.09 * (navLinks.length - idx), // reverse stagger on exit
+                          : 0.09 * (sectionLinks.length - idx),
                       }}
                       whileHover={{ scale: 1.06, x: 12 }}
                       onClick={() => setMenuOpen(false)}
@@ -161,7 +163,9 @@ export const Header = () => {
                         transition: 'background 0.22s, color 0.22s',
                       }}
                     >
-                      {label}
+                      <Link href={href} tabIndex={-1}>
+                        {label}
+                      </Link>
                     </motion.li>
                   ))}
                   <motion.li
@@ -174,8 +178,8 @@ export const Header = () => {
                       ease: [0.4, 0, 0.2, 1],
                       duration: 0.32,
                       delay: menuOpen
-                        ? 0.18 + navLinks.length * 0.09
-                        : 0.09 * (navLinks.length + 1), // reverse stagger on exit
+                        ? 0.18 + sectionLinks.length * 0.09
+                        : 0.09 * (sectionLinks.length + 1), // reverse stagger on exit
                     }}
                     whileHover={{ scale: 1.06, x: 12 }}
                     className="transition-transform"

@@ -2,33 +2,23 @@
 
 /* Theme root variables */
 :root {
-  /* Backgrounds */
-  --background: #f2f2f2;
-  --surface: #1f1f1f;
-  --footer-bg: #020617;
+  /* Core palette */
+  --background: #18181b;
+  --surface: #f4f4f5;
+  --footer-bg: #0a0a13;
 
   /* Foreground (text) */
-  --text-primary: #000;
-  --text-secondary: #fff;
+  --text-primary: #f9fafb;
+  --text-secondary: #18181b;
 
   /* Accent colors */
   --primary: #b9ff66;
 
   /* Footer specific */
-  --footer-border: #fff;
+  --footer-border: #e5e7eb;
 
   /* Effects */
-  --card-shadow: 0 20px 0 rgba(0, 0, 0, 0.12);
-}
-
-/* Dark theme overrides - only define what changes */
-[data-theme='dark'] {
-  --background: #1f1f1f;
-  --surface: #f2f2f2;
-
-  /* Foreground (text) */
-  --text-primary: #fff;
-  --text-secondary: #000;
+  --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
 }
 
 /* Theme configuration for Tailwind */
@@ -45,13 +35,11 @@
   --color-card-shadow: var(--card-shadow);
 }
 
-/* Add cursor pointer to all button elements */
 button {
   cursor: pointer;
 }
 
-/* Custom selection color: text-primary bg, text black */
 ::selection {
   background: var(--primary);
-  color: #000;
+  color: var(--text-secondary);
 }

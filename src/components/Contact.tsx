@@ -2,11 +2,7 @@
 
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-
-// Use correct typing for Variants and Easing
 const ease: [number, number, number, number] = [0.4, 0, 0.2, 1];
-
-// Reduced durations and stagger for snappier entrance
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {

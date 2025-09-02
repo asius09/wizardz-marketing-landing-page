@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Rajdhani } from 'next/font/google';
 import { Header } from '@/components/Header';
-import { ThemeProvider } from 'next-themes';
+
 
 export const metadata: Metadata = {
   title: 'WizardZ Digital Marketing Agency',
@@ -44,12 +44,10 @@ export default function RootLayout({
       <body
         className={`${rajdhani.className} bg-background relative h-screen w-screen overflow-hidden overflow-y-scroll overscroll-none px-6 antialiased md:px-32`}
       >
-        <ThemeProvider enableSystem defaultTheme="light">
-          <main>
-            <Header />
-            {children}
-          </main>
-        </ThemeProvider>
+        <main>
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
